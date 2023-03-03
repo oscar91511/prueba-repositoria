@@ -117,3 +117,14 @@ img {
 
 }
 
+@media (min-width: 800px) {
+    .page-nav {
+        background-color: red;
+        
+        
+    }
+    .product-container {
+       display:inline-block;
+       width: 500px;
+    }
+}
