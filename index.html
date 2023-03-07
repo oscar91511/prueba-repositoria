@@ -2,53 +2,67 @@
 <html lang="en">
 
 <head>
-
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <!--Internal Links-->
-    <title>GamingSoftWarePereira</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>importadores technologicos pereira pc_gamers y mas, todo sobre technologia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="style1.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <script src="script.js"></script>
-
 </head>
+<!--este es el encabezado y menu completo-->
 
 <body>
-
-        <div class="grid-layaout">
-
-            <div class="caja c1">
-               <header> 
-              
-                <link rel="stylesheet" href="images/banner1.jpg">
-
-               </header>
-                
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__container">
+                <h1 class="main-title">GAMINGSOFTWAREPEREIRA</h1>
+                <span class="icon-menu fas fa-bars" id="btn-menu"></span>
+                <nav class="main-nav" id="main-nav">
+                    <!--  <ul class="menu"> // no es necesario me complico mucho :/
+                    <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+                </ul>-->
             </div>
-
-            <div class="menu">
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">CONTACTANOS</a></li>
-                </ul>
+            </nav>
+            <div class="main-header__container">
+                <span class="main-header__txt">Contact us</span>
+                <p class="main-header__txt"><i class="fas thin fa-mobile"></i> call +57 3007901757</p>
             </div>
-            <div class="caja c3">
-                CONTENIDO  
+            <div class="main-header__container">
+                <i class="fas fa-user"></i>
+                <a href="" class="main-header__btn">my cart <i class="fas fa-shopping-cart"></i></a>
+                <input type="search" class="main-header__input" placeholder="Buscar productos">
+                <i class="fas fa-search"></i>
             </div>
-
-            <div class="caja c4">
-                BARRA LATERAL
-            </div>
-
-            <div class="caja c5">
-                PIE DE PAGINA
-            </div>
-
-
-
         </div>
+        
+    </header>
+                                     <!--este es el slider-->
+</body>
+<div class="container-slider">
+    <div class="slider" id="slider">
+        <div class="slider__section">
+            <img src="images/banner1.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+            <img src="images/banner2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+            <img src="images/banner3.jpeg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+            <img src="images/banner4.jpg" alt="" class="slider__img">
+        </div>
+    </div>
+    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+</div>
 
-    
+<script src="slider.js"></script>
 </body>
 
 </html>
