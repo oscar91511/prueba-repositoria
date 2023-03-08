@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "inconsolata";
+    src: url(/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "inconsolata";
+    src: url(/fonts/static/Inconsolata/Inconsolata-Bold.ttf);
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +16,8 @@
 
 body {
     margin: 0;
+    background-color:antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 
@@ -53,6 +66,13 @@ img {
     padding: 10px;
 }
 
+.main {
+    padding: 0 20px;
+    padding-bottom: 200px;
+}
+
+                         /* Estilos de los slider*/                    
+
 .container-slider{
     margin: 50px 0;
     position: relative;
@@ -65,6 +85,16 @@ img {
     width: 400%;
     height: 300px;
     margin-left: -100%;
+}
+
+.slider:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.145);
+    height: 100%;
 }
 
 .slider__section {
@@ -88,7 +118,7 @@ img {
     transform: translateY(-50%);
     font-size: 30PX;
     font-weight: bold;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
@@ -106,3 +136,124 @@ img {
     right: 10px;
 }
 
+                       /*Estilos de los productos*/
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+
+}
+
+.product:before {
+    content: "New";
+    background: rgb(255, 89, 0);
+    padding: 10px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transform: rotate(-90deg);
+    color: #fff;
+}
+
+
+.product__imag {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.product__title {
+    text-align: center;
+}
+
+.product__price {
+    color:#ff002f;
+    font-weight: bold;
+}
+
+.product__icon {
+    display: block;
+    margin-top: 10px;
+}
+
+.container-editor {
+    margin-top: 20px;
+
+}
+
+.container__testimonials {
+    text-align: center;
+    background: #f7f7f7;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.testimonial__txt {
+    color: #777;
+}
+
+.editor__item {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.editor__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.editor__circle {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -200px;
+    right: -150px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 70px;
+    padding-right: 50px;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.5s;
+
+}
+
+
+.editor__item:hover .editor__circle {
+    transform: scale(1.2);
+    bottom: -90px;
+    right: -50px;
+
+}
+
+.editor__item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.editor__item:hover:before {
+    opacity: 1;
+}
