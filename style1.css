@@ -18,6 +18,7 @@ body {
     margin: 0;
     background-color:antiquewhite;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;    
     
 }
 
@@ -30,7 +31,7 @@ img {
 }
 .main-header__title {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin: 10px 0;
     color: #454546;
 }
@@ -83,7 +84,7 @@ img {
 .slider {
     display: flex;
     width: 400%;
-    height: 300px;
+    height: 50vh;
     margin-left: -100%;
 }
 
@@ -98,7 +99,7 @@ img {
 }
 
 .slider__section {
-    width: 100%;
+    width: 25%;
   
 }
 
@@ -178,6 +179,7 @@ img {
 .product__price {
     color:#ff002f;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .product__icon {
@@ -257,3 +259,13 @@ img {
 .editor__item:hover:before {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .slider {
+    height: 30vh;
+    }
+    .slider__section {
+    width: 50%;
+    }
+    }
+    
