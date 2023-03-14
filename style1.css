@@ -260,6 +260,10 @@ img {
     opacity: 1;
 }
 
+
+
+ /* responsive para adaptacion en todas las pantallas */
+
 @media (max-width: 768px) {
     .slider {
     height: 30vh;
@@ -268,4 +272,3 @@ img {
     width: 50%;
     }
     }
-    
