@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,177 +7,354 @@
     <title>importadores technologicos pereira pc_gamers y mas, todo sobre technologia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="/assets/image/favicon2.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Sans:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <script src="./assets/js/main.js" type="module" defer></script>
+
 </head>
+
 <!--este es el encabezado y menu completo-->
 
 <body>
-    <header class="main-header">
-        <div class="container">
-            <div class="main-header__container">
-                <h1 class="main-title">GAMINGSOFTWARE</h1>
-                <span class="icon-menu fas fa-bars" id="btn-menu"></span>
-                <nav class="main-nav" id="main-nav">
-                    <!--  <ul class="menu"> // no es necesario me complico mucho :/
-                    <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
-                </ul>-->
-            </div>
-            </nav>
-            <div class="main-header__container">
-                <span class="main-header__txt">Contact us</span>
-                <p class="main-header__txt"><i class="fas thin fa-mobile"></i> call +57 3007901757</p>
-            </div>
-            <div class="main-header__container">
-                <i class="fas fa-user"></i>
-                <a href="" class="main-header__btn">my cart <i class="fas fa-shopping-cart"></i></a>
-                <input type="search" class="main-header__input" placeholder="Buscar productos">
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
+    <!-- Loader -->
 
+    <div class="loader">
+        <span class="loader__container">
+            <span></span>
+    </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#slider__section" class="G&S">
+                <h2>GamingSoftware</h2>
+            </a>
+            <div class="nav__menu">
+                <button type="button" class="nav__btn btn--close">
+                    <i class="bx bx-x"></i>
+                </button>
+
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="#slider__section" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#products__section" class="nav__link">Productos</a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#footer__section" class="nav__link">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__buttons">
+
+                <button type='button' id="bdark"><i class='bx bx-toggle-right bx-flip-horizontal'></i>
+                </button>
+
+                <button type="button" class="nav__btn btn--cart">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span class="notify">0</span>
+                </button>
+
+                <button type="button" class="nav__btn btn--menu">
+                    <i class="bx bx-grid-alt"></i>
+                </button>
+
+            </div>
+        </nav>
     </header>
     <!--este es el slider-->
-</body>
-<div class="container-slider">
-    <div class="slider" id="slider">
-        <div class="slider__section">
-            <img src="images/banner1.png" alt="" class="slider__img">
-            <div class="slider__content"></div>
+
+    <section class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="/assets/image/banner1.png" alt="" class="slider__img">
+                <div class="slider__content"></div>
+            </div>
+            <div class="slider__section">
+                <img src="/assets/image/banner2.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="/assets/image/banner3.jpeg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="/assets/image/banner4.jpg" alt="" class="slider__img">
+            </div>
         </div>
-        <div class="slider__section">
-            <img src="images/banner2.jpg" alt="" class="slider__img">
-        </div>
-        <div class="slider__section">
-            <img src="images/banner3.jpeg" alt="" class="slider__img">
-        </div>
-        <div class="slider__section">
-            <img src="images/banner4.jpg" alt="" class="slider__img">
-        </div>
-    </div>
-    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-</div>
-<main class="main">
-    <h2 class="main-title">New Products for you</h2>
+        <!--BUTTONS SLIDER-->
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </section>
+
+    <!-- Main -->
+
     <!--productos con para el grid + carrito de compra font awesome-->
-    <section class="container-products">
-        <div class="products">
+    <main class="main">
+        <section class="container section" id="products__section">
+            <h2 class="products__title section--title">Productos</h2>
+            <div class="products__container">
 
-            <div class="product">
-                <img src="images/pc_gamer1.jpg" alt="" class="product__img">
-                <div class="product__description">
-                    <h3 class="product__title">ryzen5 5600X|rtx3060</h3>
-                    <span class="product__price">$ 5'928.000 cop</span>
+                <div class="product">
+                    <img src="/assets/image/pc_gamer1.jpg" alt="" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title">ryzen5 5600X|rtx3060</h3>
+                        <span class="product__price"> $5'928.000|cop</span>
+                    </div>
+                    
                 </div>
-                <i class="product__icon fas fa-cart-plus"></i>
+                <div class="product">
+                    <img src="/assets/image/pc_gamer2.jpg" alt="" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title">Intel I5 11400|Gtx 1660 </h3>
+                        <span class="product__price"> $3'250.000|cop</span>
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <img src="/assets/image/pc_gamer3.jpg" alt="" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title">Intel I5 11400|Gtx 1660</h3>
+                        <span class="product__price"> $3'250.000|cop</span>
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <img src="/assets/image/pc_gamer4.jpg" alt="" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title">Intel I5 11400|Rtx 2060</h3>
+                        <span class="product__price"> $5'100.000|cop</span>
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <img src="/assets/image/pc_gamer5.jpg" alt="" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title">COMBO oficina Intel I3 12100</h3>
+                        <span class="product__price"> $3'000.000|cop</span>
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <img src="assets/image/pc_gamer6.jpg" alt="" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title">Ryzen 7 5800x|Rtx 3070</h3>
+                        <span class="product__price"> $9'600.000|cop</span>
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <img src="/assets/image/pc_gamer7.jpg" alt="" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title">Asus Tuf Gaming F15|Gtx 1650 TI</h3>
+                        <span class="product__price"> $4'700.000|cop</span>
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <img src="/assets/image/pc_gamer8.jpg" alt="" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title">Asus Tuf Gaming F15|Gtx 1650 TI</h3>
+                        <span class="product__price"> $4'700.000|cop</span>
+                    </div>
+                    
+                </div>
+        </section>
+    </main>
+
+    <!-- Cart -->
+    <div class="cart">
+        <div class="cart__container">
+            <div class="cart__header">
+                <h3 class="cart__title">Carrito de Compras</h3>
+                <button type="button" class="cart__btn btn--close">
+                    <i class="bx bx-x"></i>
+                </button>
             </div>
-            <div class="product">
-                <img src="images/pc_gamer2.jpg" alt="" class="product__img">
-                <div class="product__description">
-                    <h3 class="product__title">Intel I5 11400|Gtx 1660 </h3>
-                    <span class="product__price">$ 3'250.000 cop</span>
-                </div>
-                <i class="product__icon fas fa-cart-plus"></i>
+
+            <div class="cart__body">
+
             </div>
-            <div class="product">
-                <img src="images/pc_gamer3.jpg" alt="" class="product__img">
-                <div class="product__description">
-                    <h3 class="product__title">Intel I5 11400|Gtx 1660</h3>
-                    <span class="product__price">$ 3'250.000 cop</span>
+
+            <div class="cart__footer">
+
+                <div class="cart__subtotal">
+                    <span class="cart__subtotal--text">Subtotal</span>
+                    <span class="cart__subtotal--item">$0</span>
                 </div>
-                <i class="product__icon fas fa-cart-plus"></i>
+
+                <div class="cart__iva">
+                    <span class="cart__iva--text">Iva</span>
+                    <span class="cart__iva--item">$0</span>
+                </div>
+
+                <div class="cart__count">
+                    <span class="cart__count--text">Articulos</span>
+                    <span class="cart__count--item">0</span>
+                </div>
+
+                <div class="cart__total">
+                    <span class="cart__total--text">Total</span>
+                    <span class="cart__total--item">$0</span>
+                </div>
+
+                <button type="button" class="cart__btn btn--buy">Comprar</button>
             </div>
-            <div class="product">
-                <img src="images/pc_gamer4.jpg" alt="" class="product__img">
-                <div class="product__description">
-                    <h3 class="product__title">Intel I5 11400|Rtx 2060</h3>
-                    <span class="product__price">$ 5'100.000 cop</span>
-                </div>
-                <i class="product__icon fas fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <img src="images/pc_gamer5.jpg" alt="" class="product__img">
-                <div class="product__description">
-                    <h3 class="product__title">COMBO oficina Intel I3 12100</h3>
-                    <span class="product__price">$ 3'000.000 cop</span>
-                </div>
-                <i class="product__icon fas fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <img src="images/pc_gamer6.jpg" alt="" class="product__img">
-                <div class="product__description">
-                    <h3 class="product__title">Ryzen 7 5800x|Rtx 3070</h3>
-                    <span class="product__price">$ 9'600.000 cop</span>
-                </div>
-                <i class="product__icon fas fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <img src="images/pc_gamer7.jpg" alt="" class="product__img">
-                <div class="product__description">
-                    <h3 class="product__title">Asus Tuf Gaming F15|Gtx 1650 TI</h3>
-                    <span class="product__price">$ 4'700.000 cop</span>
-                </div>
-                <i class="product__icon fas fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <img src="images/pc_gamer8.jpg" alt="" class="product__img">
-                <div class="product__description">
-                    <h3 class="product__title">Asus Tuf Gaming F15|Gtx 1650 TI</h3>
-                    <span class="product__price">$ 4'700.000 cop</span>
-                    <i class="product__icon fas fa-cart-plus"></i>
-                </div>
-    </section>
+        </div>
     </div>
 
-    <section class="container__testimonials"></div>
-        <h2 class="section__title">testimonials</h2>
-        <h3 class="testimonials__title">Sebastian Ramirez |Medellin |Spanish</h3>
-        <p>recibido, Muchas gracias una maquinota, que nave.
-            Muy contento con el servicio,llego melito.
-            Super recomendados.</p>
 
-    </section>
+    </header>
 
-   
+
+
+
+
     <div class="container-editor">
         <div class="editor__item">
-            <img src="/images/monitor-desarrollador-web.jpg" alt="" class="editor__img">
+            <img src="/assets/image/monitor-desarrollador-web.jpg" alt="" class="editor__img">
             <p class="editor__circle">EXPRESS YOUR STYLE</p>
         </div>
         <div class="editor__item">
-            <img src="/images/asusrog1.jpg" alt="" class="editor__img">
+            <img src="/assets/image/asusrog1.jpg" alt="" class="editor__img">
             <p class="editor__circle">EXPRESS YOUR STYLE</p>
         </div>
     </div>
 
-    <section class="container-tips">
-        <div class="tip">
-            <i class="far fa-hand-paper"></i>
-            <h2 class="tip__title"></h2>
-            <p class="tip__txt"></p>
-            <a href=""></a>
+    <!-- Modal Gracias por contactarnos -->
+    <section class="modal__global modal__thanks">
+        <div class="modal__container__thanks">
+            <img src="/assets/image/Quality Check_Outline.svg" alt="Imagen de desarrollador web" class="modal__img">
+            <p class="modal__paragraph"> !Gracias por contactarnos!</p>
+            <p class="modal__paragraph">Pronto nos pondremos en contacto contigo.</p>
+            <button class="modal__close__global modal__close__thanks">Aceptar</button>
         </div>
-        <div class="tip">
-            <i class="fas fa-rocket"></i>
-            <h2 class="tip__title"></h2>
-            <p class="tip__txt"></p>
-            <a href=""></a>
-        </div>
-        <div class="tip">
-            <i class="fas fa-cog"></i>
-            <h2 class="tip__title"></h2>
-            <p class="tip__txt"></p>
-            <a href=""></a>
-        </div>.tip__btn
     </section>
-</main>
-<!--link de la funcion archivo slider.js-->
-<script src="slider.js"></script>
+
+
+    <!-- Modal checkout -->
+    <section class="modal__global modal__checkout">
+        <div class="modal__container__checkout">
+            <i class='bx bx-check-circle modal__icon__check'></i>
+            <p class="modal__paragraph">!Gracias por tu compra!</p>
+            <button class="modal__close__global modal__close__checkout">Aceptar</button>
+        </div>
+    </section>
+
+    <!-- Modal Stock Agotado -->
+    <section class="modal__global modal__stock">
+        <div class="modal__container__stock">
+            <i class='bx bxs-error-alt modal__icon__error'></i>
+            <p class="modal__paragraph">!Lo sentimos! <br> No puedes agregar más veces este producto.</p>
+            <button class="modal__close__global modal__close__stock">Aceptar</button>
+        </div>
+    </section>
+    <!-- Contact Button  -->
+    <div class="contact">
+        <a class="contact__button"></a>
+    </div>
+
+    <div class="form__container">
+        <form class="form" action="">
+            <h3 class="form__title">Información Personal</h3>
+            <div class="form__contact">
+
+                <div class="form__group">
+                    <input type="text" id="name" class="form__input" placeholder=" " required>
+                    <label for="name" class="form__label">Nombre</label>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group">
+                    <input type="email" id="email" class="form__input" placeholder=" " required>
+                    <label for="email" class="form__label">Correo</label>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group">
+                    <input type="tel" id="phone" class="form__input" placeholder=" " required>
+                    <label for="phone" class="form__label">Teléfono</label>
+                    <span class="form__line"></span>
+                </div>
+
+                <div class="form__message">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" class="form__area" required placeholder="Escribe aquí tu mensaje"></textarea>
+                </div>
+
+                <input type="submit" value="Contactar" class="form__submit btn--submit">
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__container container" id="footer__section">
+            <div class="footer__top">
+
+                <div class="footer__description">
+                    <h3 class="footer__title">Sobre Nosotros</h3>
+                    <p class="footer__text">Somos GamingSoftware_Pereira una tienda gamer, brindamos lo mejor para tu
+                        negocio o espacio gamer.</p>
+                </div>
+            </div>
+
+            <div class="footer__boxes">
+                <div class="box1">
+                    <h3 class="footer__title">Redes Sociales</h3>
+                    <ul class="footer__social">
+                        <li class="footer__item">
+                            <a href="https://github.com/oscar91511" target="_blank" class="footer__link">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.instagram.com/gamingsofware_pereira/" target="_blank"
+                                class="footer__link">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.linkedin.com/in/oscar-eduardo-lopez-restrepo-968a91265/"
+                                target="_blank" class="footer__link">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box3">
+                    <h3 class="footer__title">Medios de Pago</h3>
+                    <ul class="footer__social">
+                        <li class="footer__item">
+                            <a href="#footer__section" class="footer__link footer__payments">
+                                <i class='bx bxl-mastercard'></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#footer__section" class="footer__link footer__payments">
+                                <i class='bx bxl-visa'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            </main>
+
+
+            <div class="footer__bottom">
+                <p class="footer__text">&copy Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <!--link funciones archivos .js-->
+
+    </footer>
 </body>
 
 </html>
