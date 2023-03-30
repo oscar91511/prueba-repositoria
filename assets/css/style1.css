@@ -353,6 +353,8 @@ button {
 
 
 .products__container {
+    overflow: hidden;
+    object-fit:cover;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
@@ -414,6 +416,7 @@ button {
 }
 
 .product__content {
+    height: 80px;
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1064,7 +1067,7 @@ button {
 
  /* responsive para adaptacion en todas las pantallas */
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .slider {
     height: 30vh;
     }

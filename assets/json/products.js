@@ -37,7 +37,7 @@ const items = [
         "name": "Ryzen 7 5800x/Rtx 3070/32gb ram Rgb/B550 Gaming Plus",
         "price": 9000000,
         "quantity": 5,
-        "image": "https://i.ibb.co/zHYJV3j/img5-2.jpg"
+        "image": "https://i.ibb.co/Df7vGyW/img5.jpg"
     },
 
     {
