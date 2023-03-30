@@ -1,6 +1,10 @@
-/*function products (products) {
+function products (products) {
 
-    const db = JSON.parse(window.localStorage.getItem("products")) || products
+
+
+
+
+    const db = products
 
 
 
@@ -37,4 +41,4 @@
     }
 }
 
-export default products*/
+export default products

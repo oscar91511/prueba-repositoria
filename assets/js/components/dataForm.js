@@ -8,7 +8,7 @@ const modalThanks = document.querySelector(".modal__thanks")
 contactForm.addEventListener('submit', function (e) {
   e.preventDefault()
   const URL = 'https://formsubmit.co/ajax/'
-  const email = 'vesokif458@asoflex.com'
+  const email = 'gamingsoftware@gmail.com.com'
 
   const dataForm = {
     name: this.elements.name.value,

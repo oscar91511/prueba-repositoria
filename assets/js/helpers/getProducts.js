@@ -1,11 +1,18 @@
-async function getProducts () {
-    try {
-        const res = await window.fetch("")
-        const data = await res.json()
-        return data
-    } catch (error) {
-        console.log(error)
-    }
+function getProducts() {
+
+    fetch('products.json')
+
+        .then(function (res) {
+           
+            return res.json();
+        })
+        .then(function(data){
+            console.log(data)
+        })
+
+        .catch(function (error) {
+            console.log(error);
+        })
 }
 
 export default getProducts
