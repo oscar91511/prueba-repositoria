@@ -397,11 +397,14 @@ button {
 }
 
 .product__image {
+    width: 268px;
+    height: 217px;
     padding: var(--sp-1);
   
 }
 
 .product__image img {
+    height: 100%;
     transition: transform .3s ease-in-out;
 }
 
