@@ -9,7 +9,7 @@ const items = [
     
     {
         "id": 2,
-        "name": "Intel-i3 10100/B560M-A/8gbs ram/500gb/morovol white Rgbs",
+        "name": "Intel-i3 10100/B560M-A/8gbs ram/500gb/morovol white",
         "price": 1500000,
         "quantity": 4,
         "image": "https://i.ibb.co/CvM21P6/img3.jpg"
