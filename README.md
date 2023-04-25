@@ -18,6 +18,7 @@
 - #### numbers of items of  products
 - #### animations on products and publicited
 - #### socials media
+- #### Support Icon for contact 
 
 *we use  react, CSS, html and JavaScript*
 
