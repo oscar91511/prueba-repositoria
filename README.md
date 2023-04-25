@@ -24,4 +24,4 @@
 
 [prueba-repositoria /StoreGamingSoftWarePereira](https://tienda-virtual-1.netlify.app/ )
 
-![prueba_repositoria/test_repository](https://i.ibb.co/pX4r90K/Academlo-Store.jpg)
+![prueba_repositoria/test_repository](https://i.ibb.co/X8bNDGw/store.jpg)
